@@ -337,3 +337,37 @@ a {
         flex-direction: column;
     }
 }
+
+
+/* Responsive Design for Hero Section */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content .tagline {
+        font-size: 1em;
+        margin: 0.5em 0;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 0.5em 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-content .tagline {
+        font-size: 0.9em;
+        margin: 0.5em 0;
+    }
+
+    .cta-button {
+        font-size: 0.9em;
+        padding: 0.5em;
+    }
+}
