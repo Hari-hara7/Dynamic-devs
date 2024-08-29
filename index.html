@@ -3,44 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Devs - Home</title>
+    <title>Dynamic Devs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Overlay Background for Mobile Menu -->
-    <div id="overlay" class="overlay"></div>
-
-    <!-- Header with Logo and Navigation -->
-    <header id="header">
-        <div class="logo-container">
-            <img src="dynamic devs (2).jpg" alt="Dynamic Devs Logo" class="logo">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="dynamic devs (2).jpg" alt="Dynamic Devs Logo">
         </div>
-        <nav>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#clubs">Clubs</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#clubs">Clubs</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="mobile-menu">
+            <a href="#hero">Home</a>
+            <a href="#clubs">Clubs</a>
+            <a href="#events">Events</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
     <!-- Hero Section -->
-    <section id="hero">
+    <section id="hero" class="hero-section">
         <div class="hero-content">
             <h1>Welcome to <span class="highlight">Dynamic Devs</span></h1>
-            <p class="tagline">Connect, Learn, Innovate!</p>
+            <p class="tagline">Empowering Innovation through Collaboration</p>
             <button class="cta-button" onclick="scrollToSection('clubs')">
                 <i class="fas fa-users"></i> Explore Clubs
             </button>
-            
         </div>
     </section>
 
@@ -54,7 +49,7 @@
                     <img src="finiteloop.png" alt="Finite Loop Club">
                     <h3>Finite Loop Club</h3>
                     <p>Innovating with Code</p>
-                    <button class="view-events-button" onclick="navigateToClub('finite-loop-club.html')">
+                    <button class="view-events-button">
                         <i class="fas fa-calendar-alt"></i> View Events
                     </button>
                 </div>
@@ -64,7 +59,7 @@
                     <img src="robootics.png" alt="Robotics Club">
                     <h3>Robotics Club</h3>
                     <p>Engineering the Future</p>
-                    <button class="view-events-button" onclick="navigateToClub('robotics-club.html')">
+                    <button class="view-events-button">
                         <i class="fas fa-calendar-alt"></i> View Events
                     </button>
                 </div>
@@ -74,7 +69,7 @@
                     <img src="aero club.png" alt="Aero Club">
                     <h3>Aero Club</h3>
                     <p>Exploring the Skies</p>
-                    <button class="view-events-button" onclick="navigateToClub('aero-club.html')">
+                    <button class="view-events-button">
                         <i class="fas fa-calendar-alt"></i> View Events
                     </button>
                 </div>
@@ -84,7 +79,7 @@
                     <img src="Hacker earth.jpeg" alt="HackerEarth Club">
                     <h3>HackerEarth Club</h3>
                     <p>Coding Challenges</p>
-                    <button class="view-events-button" onclick="navigateToClub('hackerearth-club.html')">
+                    <button class="view-events-button">
                         <i class="fas fa-calendar-alt"></i> View Events
                     </button>
                 </div>
@@ -94,7 +89,7 @@
                     <img src="csi-logo.webp" alt="CSI Club">
                     <h3>CSI Club</h3>
                     <p>Innovative Solutions</p>
-                    <button class="view-events-button" onclick="navigateToClub('csi-club.html')">
+                    <button class="view-events-button">
                         <i class="fas fa-calendar-alt"></i> View Events
                     </button>
                 </div>
@@ -104,14 +99,13 @@
                     <img src="kalanzali.jpeg" alt="Kalanjali Club">
                     <h3>Kalanjali Club</h3>
                     <p>Cultural Excellence</p>
-                    <button class="view-events-button" onclick="navigateToClub('kalanjali-club.html')">
+                    <button class="view-events-button">
                         <i class="fas fa-calendar-alt"></i> View Events
                     </button>
                 </div>
             </div>
         </div>
     </section>
-    
 
     <!-- Events Section -->
     <section id="events" class="events-section">
@@ -140,15 +134,9 @@
             </div>
         </div>
     </section>
-    
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Contact Us</h2>
-        <p>Have questions or want to get involved? Reach out to us through our <a href="contact.html">Contact Page</a>.</p>
-    </section>
-
-    <!-- Footer -->
-   
+    
+    <script src="scripts.js"></script>
 </body>
 </html>
