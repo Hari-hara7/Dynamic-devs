@@ -10,7 +10,7 @@ body {
 
 /* Header and Navigation */
 header {
-    background-color: #000000;
+    background-color: #111;
     padding: 1em;
     position: relative;
     display: flex;
@@ -107,12 +107,12 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.nav-menu li {
-    text-align: center;
+.nav-menu.active li {
     margin: 1em 0;
+    text-align: center;
 }
 
-.nav-menu a {
+.nav-menu.active a {
     font-size: 1.5em;
 }
 

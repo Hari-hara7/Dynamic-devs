@@ -6,6 +6,7 @@
     <title>Dynamic Devs - Home</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Overlay Background for Mobile Menu -->
@@ -36,7 +37,10 @@
         <div class="hero-content">
             <h1>Welcome to <span class="highlight">Dynamic Devs</span></h1>
             <p class="tagline">Connect, Learn, Innovate!</p>
-            <button class="cta-button" onclick="scrollToSection('clubs')">Explore Clubs</button>
+            <button class="cta-button" onclick="scrollToSection('clubs')">
+                <i class="fas fa-users"></i> Explore Clubs
+            </button>
+            
         </div>
     </section>
 
@@ -47,54 +51,67 @@
             <!-- Club Cards -->
             <div class="club-card" onclick="navigateToClub('finite-loop-club.html')">
                 <div class="card-content">
-                    <img src="images/finite-loop-logo.png" alt="Finite Loop Club">
+                    <img src="finiteloop.png" alt="Finite Loop Club">
                     <h3>Finite Loop Club</h3>
                     <p>Innovating with Code</p>
-                    <button class="view-events-button" onclick="navigateToClub('finite-loop-club.html')">View Events</button>
+                    <button class="view-events-button" onclick="navigateToClub('finite-loop-club.html')">
+                        <i class="fas fa-calendar-alt"></i> View Events
+                    </button>
                 </div>
             </div>
             <div class="club-card" onclick="navigateToClub('robotics-club.html')">
                 <div class="card-content">
-                    <img src="images/robotics-logo.png" alt="Robotics Club">
+                    <img src="robootics.png" alt="Robotics Club">
                     <h3>Robotics Club</h3>
                     <p>Engineering the Future</p>
-                    <button class="view-events-button" onclick="navigateToClub('robotics-club.html')">View Events</button>
+                    <button class="view-events-button" onclick="navigateToClub('robotics-club.html')">
+                        <i class="fas fa-calendar-alt"></i> View Events
+                    </button>
                 </div>
             </div>
             <div class="club-card" onclick="navigateToClub('aero-club.html')">
                 <div class="card-content">
-                    <img src="images/aero-logo.png" alt="Aero Club">
+                    <img src="aero club.png" alt="Aero Club">
                     <h3>Aero Club</h3>
                     <p>Exploring the Skies</p>
-                    <button class="view-events-button" onclick="navigateToClub('aero-club.html')">View Events</button>
+                    <button class="view-events-button" onclick="navigateToClub('aero-club.html')">
+                        <i class="fas fa-calendar-alt"></i> View Events
+                    </button>
                 </div>
             </div>
             <div class="club-card" onclick="navigateToClub('hackerearth-club.html')">
                 <div class="card-content">
-                    <img src="images/hackerearth-logo.png" alt="HackerEarth Club">
+                    <img src="Hacker earth.jpeg" alt="HackerEarth Club">
                     <h3>HackerEarth Club</h3>
                     <p>Coding Challenges</p>
-                    <button class="view-events-button" onclick="navigateToClub('hackerearth-club.html')">View Events</button>
+                    <button class="view-events-button" onclick="navigateToClub('hackerearth-club.html')">
+                        <i class="fas fa-calendar-alt"></i> View Events
+                    </button>
                 </div>
             </div>
             <div class="club-card" onclick="navigateToClub('csi-club.html')">
                 <div class="card-content">
-                    <img src="images/csi-logo.png" alt="CSI Club">
+                    <img src="csi-logo.webp" alt="CSI Club">
                     <h3>CSI Club</h3>
                     <p>Innovative Solutions</p>
-                    <button class="view-events-button" onclick="navigateToClub('csi-club.html')">View Events</button>
+                    <button class="view-events-button" onclick="navigateToClub('csi-club.html')">
+                        <i class="fas fa-calendar-alt"></i> View Events
+                    </button>
                 </div>
             </div>
             <div class="club-card" onclick="navigateToClub('kalanjali-club.html')">
                 <div class="card-content">
-                    <img src="images/kalanjali-logo.png" alt="Kalanjali Club">
+                    <img src="kalanzali.jpeg" alt="Kalanjali Club">
                     <h3>Kalanjali Club</h3>
                     <p>Cultural Excellence</p>
-                    <button class="view-events-button" onclick="navigateToClub('kalanjali-club.html')">View Events</button>
+                    <button class="view-events-button" onclick="navigateToClub('kalanjali-club.html')">
+                        <i class="fas fa-calendar-alt"></i> View Events
+                    </button>
                 </div>
             </div>
         </div>
     </section>
+    
 
     <!-- Events Section -->
     <section id="events" class="events-section">
@@ -103,20 +120,27 @@
             <div class="event-item">
                 <h3>JavaScript Basics Workshop</h3>
                 <p>Date: Sept 5, 2024</p>
-                <button class="join-now-button">Join Now</button>
+                <button class="join-now-button">
+                    <i class="fas fa-calendar-check"></i> Join Now
+                </button>
             </div>
             <div class="event-item">
                 <h3>Robotics Demo Day</h3>
                 <p>Date: Sept 15, 2024</p>
-                <button class="join-now-button">Join Now</button>
+                <button class="join-now-button">
+                    <i class="fas fa-robot"></i> Join Now
+                </button>
             </div>
             <div class="event-item">
                 <h3>Aero Innovation Challenge</h3>
                 <p>Date: Oct 1, 2024</p>
-                <button class="join-now-button">Join Now</button>
+                <button class="join-now-button">
+                    <i class="fas fa-plane"></i> Join Now
+                </button>
             </div>
         </div>
     </section>
+    
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
