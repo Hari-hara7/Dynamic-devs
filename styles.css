@@ -371,3 +371,48 @@ a {
         padding: 0.5em;
     }
 }
+
+/* Responsive Design for Clubs Section */
+@media (max-width: 768px) {
+    .club-card {
+        width: calc(50% - 1em); /* 2 cards per row */
+    }
+
+    .clubs-section h2 {
+        font-size: 2em; /* Adjust header size */
+    }
+
+    .card-content h3 {
+        font-size: 1.5em; /* Adjust card title size */
+    }
+
+    .card-content p {
+        font-size: 1em; /* Adjust card description size */
+    }
+
+    .view-events-button {
+        font-size: 0.9em; /* Adjust button font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .club-card {
+        width: calc(100% - 1em); /* 1 card per row */
+    }
+
+    .clubs-section h2 {
+        font-size: 1.5em; /* Adjust header size */
+    }
+
+    .card-content h3 {
+        font-size: 1.2em; /* Adjust card title size */
+    }
+
+    .card-content p {
+        font-size: 0.9em; /* Adjust card description size */
+    }
+
+    .view-events-button {
+        font-size: 0.8em; /* Adjust button font size */
+    }
+}
