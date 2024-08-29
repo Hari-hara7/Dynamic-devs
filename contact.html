@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Devs | Contact Us</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Main stylesheet -->
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Text Gradient Style */
+        .text-gradient {
+            background: linear-gradient(45deg, #00BFFF, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #1a1a1a;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 1.5em;
+            text-decoration: none;
+            background: linear-gradient(45deg, #00BFFF, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .nav-links a {
+            color: #00BFFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #ffffff;
+        }
+
+        /* Burger Menu (for mobile screens) */
+        .burger {
+            display: none;
+            cursor: pointer;
+        }
+
+        .burger div {
+            width: 25px;
+            height: 3px;
+            background-color: #00BFFF;
+            margin: 5px;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            padding: 100px 20px 50px;
+            background-color: #1a1a1a;
+            text-align: center;
+        }
+
+        .contact-container h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .contact-container p {
+            font-size: 1.2em;
+            color: #ccc;
+            margin-bottom: 40px;
+        }
+
+        .contact-form {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #111;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #00BFFF;
+        }
+
+        .contact-form input, .contact-form textarea, .contact-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #222;
+            color: #fff;
+            font-size: 1em;
+        }
+
+        .contact-form button {
+            background-color: #00BFFF;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #00a3cc;
+        }
+
+        /* Map Section */
+        .map-container {
+            margin-top: 50px;
+            position: relative;
+            height: 400px;
+            width: 100%;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #ccc;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+
+            .navbar.active .nav-links {
+                display: flex;
+                background-color: #1a1a1a;
+                padding: 20px 0;
+            }
+
+            .burger {
+                display: block;
+            }
+
+            .contact-container {
+                padding: 80px 20px 30px;
+            }
+
+            .contact-container h1 {
+                font-size: 2em;
+            }
+
+            .contact-container p {
+                font-size: 1em;
+            }
+
+            .contact-form {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo text-gradient">Dynamic Devs</a>
+        <div class="nav-links">
+            <a href="index.html" class="text-gradient">Home</a>
+            <a href="clubs.html" class="text-gradient">Clubs</a>
+            <a href="events.html" class="text-gradient">Events</a>
+            <a href="resources.html" class="text-gradient">Resources</a>
+            <a href="contact.html" class="text-gradient">Contact</a>
+        </div>
+        <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <div class="contact-container">
+        <h1 class="text-gradient">Contact Us</h1>
+        <p class="text-gradient">We'd love to hear from you! Reach out to us with any questions, feedback, or concerns.</p>
+        
+        <div class="contact-form">
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="club">Club</label>
+                <select id="club" name="club" required>
+                    <option value="">Select Your Club</option>
+                    <option value="Finite Loop Club">Finite Loop Club</option>
+                    <option value="Robotics Club">Robotics Club</option>
+                    <option value="Aero Club">Aero Club</option>
+                    <option value="HackerEarth Club">HackerEarth Club</option>
+                    <option value="CSI Club">CSI Club</option>
+                    <option value="Kalanjali Club">Kalanjali Club</option>
+                </select>
+
+                <label for="semester">Semester</label>
+                <input type="text" id="semester" name="semester" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7765939.070603418!2d74.99797249968253!3d13.117965062329253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfd5dfd64f39a9%3A0x5c4d3ff8aaeb5d8b!2sNMAMIT%2C%20Nitte!5e0!3m2!1sen!2sin!4v1641320287168!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="text-gradient">© 2024 Dynamic Devs. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
