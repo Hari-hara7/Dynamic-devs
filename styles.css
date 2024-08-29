@@ -1,0 +1,273 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, p {
+    margin: 0.5em 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #00bfff;
+}
+
+section {
+    padding: 2em 1em;
+}
+
+.highlight {
+    color: #00bfff;
+}
+
+/* Header */
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.logo-container {
+    margin-bottom: 1em;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    animation: fadeIn 1s ease-in;
+}
+
+nav {
+    margin-top: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: #00bfff;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0073e6;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 2s ease-in;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+    border-radius: 10px;
+    animation: slideUp 1.5s ease-out;
+}
+
+.cta-button {
+    background-color: #00bfff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0073e6;
+    transform: scale(1.05);
+}
+
+/* Clubs Section */
+.clubs-section {
+    background-color: #111;
+    padding: 3em 1em;
+}
+
+.club-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.club-card {
+    width: 280px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+    box-shadow: 5px 5px 15px #000, -5px -5px 15px #222;
+    cursor: pointer;
+    transition: transform 0.4s, box-shadow 0.4s;
+    position: relative;
+    animation: float 3s infinite ease-in-out;
+}
+
+.club-card:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 10px 10px 20px #000, -10px -10px 20px #333;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding: 1em;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.card-content img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card-content:hover img {
+    transform: rotate(15deg) scale(1.2);
+}
+
+.card-content h3 {
+    color: #00bfff;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+}
+
+.view-events-button {
+    background-color: #00bfff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+.view-events-button:hover {
+    background-color: #0073e6;
+    transform: scale(1.05);
+}
+
+/* Events Section */
+.events-section {
+    background-color: #000;
+    padding: 3em 1em;
+}
+
+.events-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.event-item {
+    background-color: #111;
+    padding: 1.5em;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.join-now-button {
+    background-color: #00bfff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.join-now-button:hover {
+    background-color: #0073e6;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .club-cards, .events-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .club-card, .event-item {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+}
