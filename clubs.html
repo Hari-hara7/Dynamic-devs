@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Devs | Clubs</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Main stylesheet -->
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Text Gradient Style */
+        .text-gradient {
+            background: linear-gradient(45deg, #00BFFF, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0px;
+            background-color: #1a1a1a;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 1.5em;
+            text-decoration: none;
+            background: linear-gradient(45deg, #00BFFF, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .nav-links a {
+            color: #00BFFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #ffffff;
+        }
+
+        /* Burger Menu (for mobile screens) */
+        .burger {
+            display: none;
+            cursor: pointer;
+        }
+
+        .burger div {
+            width: 25px;
+            height: 3px;
+            background-color: #00BFFF;
+            margin: 5px;
+        }
+
+        /* Hero Section */
+        header {
+            text-align: center;
+            padding: 100px 20px 50px;
+            background-color: #000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+
+        /* Clubs Section */
+        .clubs-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 20px;
+            background-color: #1a1a1a;
+        }
+
+        .club-card {
+            width: 300px;
+            margin: 15px;
+            padding: 20px;
+            background-color: #111;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .club-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+        }
+
+        .club-logo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(0, 191, 255, 0.8); /* Glowing effect */
+            filter: brightness(1.2); /* Slightly brighter effect */
+        }
+
+        .club-title {
+            font-size: 1.5em;
+            color: #00BFFF;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #00BFFF, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .club-description {
+            font-size: 1em;
+            color: #ccc;
+            margin-bottom: 15px;
+            background: linear-gradient(45deg, #00BFFF, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .club-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00BFFF;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .club-button:hover {
+            background-color: #00a3cc;
+        }
+
+        /* Additional Features Section */
+        .features-section {
+            padding: 50px 20px;
+            background-color: #000;
+            text-align: center;
+        }
+
+        .features-section h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+            background: linear-gradient(45deg, #00BFFF, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .feature {
+            margin: 20px 0;
+            font-size: 1.2em;
+            color: #ccc;
+            background: linear-gradient(45deg, #00BFFF, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #ccc;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+
+            .navbar.active .nav-links {
+                display: flex;
+                background-color: #1a1a1a;
+                padding: 20px 0;
+            }
+
+            .burger {
+                display: block;
+            }
+
+            .clubs-container {
+                padding: 20px;
+            }
+
+            .club-card {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            header {
+                padding: 80px 20px 30px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo text-gradient">Dynamic Devs</a>
+        <div class="nav-links">
+            <a href="index.html" class="text-gradient">Home</a>
+            <a href="events.html" class="text-gradient">Events</a>
+            <a href="resources.html" class="text-gradient">Resources</a>
+            <a href="contact.html" class="text-gradient">Contact</a>
+        </div>
+        <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <h1 class="text-gradient">Explore Our Clubs</h1>
+        <p class="text-gradient">Join our clubs to participate in virtual meetings, live chats, workshops, and more.</p>
+    </header>
+
+    <!-- Clubs Section -->
+    <div class="clubs-container">
+        <!-- Finite Loop Club -->
+        <div class="club-card">
+            <img src="finiteloop.png" alt="Finite Loop Club Logo" class="club-logo">
+            <h2 class="club-title text-gradient">Finite Loop Club</h2>
+            <p class="club-description">Engage in coding workshops, hackathons, virtual meetings, and live chats.</p>
+            <a href="finite-loop-club.html" class="club-button">Explore Finite Loop Club</a>
+        </div>
+
+        <!-- Robotics Club -->
+        <div class="club-card">
+            <img src="robootics.png" alt="Robotics Club Logo" class="club-logo">
+            <h2 class="club-title text-gradient">Robotics Club</h2>
+            <p class="club-description">Join robotics projects, attend live webinars, and participate in competitions.</p>
+            <a href="robotics-club.html" class="club-button">Explore Robotics Club</a>
+        </div>
+
+        <!-- Aero Club -->
+        <div class="club-card">
+            <img src="aero club.png" alt="Aero Club Logo" class="club-logo">
+            <h2 class="club-title text-gradient">Aero Club</h2>
+            <p class="club-description">Participate in aero projects, drone racing, and live discussions.</p>
+            <a href="aero-club.html" class="club-button">Explore Aero Club</a>
+        </div>
+
+        <!-- HackerEarth Club -->
+        <div class="club-card">
+            <img src="Hacker earth.jpeg" alt="HackerEarth Club Logo" class="club-logo">
+            <h2 class="club-title text-gradient">HackerEarth Club</h2>
+            <p class="club-description">Solve coding challenges, join live coding events, and engage in virtual hackathons.</p>
+            <a href="hackerearth-club.html" class="club-button">Explore HackerEarth Club</a>
+        </div>
+
+        <!-- CSI Club -->
+        <div class="club-card">
+            <img src="csi-logo.webp" alt="CSI Club Logo" class="club-logo">
+            <h2 class="club-title text-gradient">CSI Club</h2>
+            <p class="club-description">Participate in tech talks, coding challenges, and live workshops.</p>
+            <a href="csi-club.html" class="club-button">Explore CSI Club</a>
+        </div>
+
+        <!-- Kalanjali Club -->
+        <div class="club-card">
+            <img src="kalanzali.jpeg" alt="Kalanjali Club Logo" class="club-logo">
+            <h2 class="club-title text-gradient">Kalanjali Club</h2>
+            <p class="club-description">Express your creativity through cultural events, art exhibitions, and performances.</p>
+            <a href="kalanjali-club.html" class="club-button">Explore Kalanjali Club</a>
+        </div>
+    </div>
+
+    <!-- Additional Features Section -->
+    <section class="features-section">
+        <h2 class="text-gradient">What You Can Do in Our Clubs</h2>
+        <p class="feature text-gradient"><span>Virtual Meetings:</span> Join club-specific meetings with industry experts and peers.</p>
+        <p class="feature text-gradient"><span>Live Chat:</span> Engage in real-time discussions with other members and club leaders.</p>
+        <p class="feature text-gradient"><span>Chatbots:</span> Get instant answers to your questions through our AI-powered chatbots.</p>
+        <p class="feature text-gradient"><span>Workshops & Webinars:</span> Attend specialized workshops and webinars to boost your skills.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p class="text-gradient">© 2024 Dynamic Devs. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

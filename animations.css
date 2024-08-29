@@ -1,0 +1,34 @@
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.club-card {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Hover animation for the button */
+.club-button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.club-button:hover {
+    transform: scale(1.05);
+}
+
+/* Slide in from the bottom animation */
+@keyframes slideInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.club-card {
+    animation: slideInUp 0.5s ease-in-out;
+}

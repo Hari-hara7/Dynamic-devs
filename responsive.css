@@ -1,0 +1,53 @@
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .clubs-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .club-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .club-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .club-title {
+        font-size: 1.2em;
+    }
+
+    .club-description {
+        font-size: 0.9em;
+    }
+
+    .club-button {
+        padding: 8px;
+    }
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .club-card {
+        width: 45%;
+    }
+
+    .club-logo {
+        width: 90px;
+        height: 90px;
+    }
+
+    .club-title {
+        font-size: 1.3em;
+    }
+}
