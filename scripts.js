@@ -124,3 +124,7 @@ function openMeetings() {
 function openMeetingss() {
     window.open('https://aeroclubnmamit.daily.co/hvJyS2HlCA6KDuGQNObX', '_blank');
 }
+
+function openMeetingsss() {
+    window.open('https://hackerearthnmamit.daily.co/NDcgLykHVbBFXb7QYQYo', '_blank');
+}
