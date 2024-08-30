@@ -116,3 +116,8 @@ form.addEventListener("submit", function(event) {
 function openMeeting() {
     window.open('https://finiteloop.daily.co/hello-daily', '_blank');
 }
+
+
+function openMeetings() {
+    window.open('https://roboticsclub.daily.co/8id78buYAm8PLyRMMJc0', '_blank');
+}
