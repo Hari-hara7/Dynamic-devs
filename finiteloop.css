@@ -65,7 +65,7 @@ a:hover {
     align-items: center;
     height: 100vh;
     text-align: center;
-    background: linear-gradient(135deg, #000, #111);
+    background: linear-gradient(135deg,  #000,rgb(0, 0, 0));
     animation: fadeIn 1.5s ease-in;
 }
 
@@ -638,4 +638,76 @@ form textarea {
 
 .hidden {
     display: none;
+}
+
+
+
+/* General Styles for Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111; /* Dark background for the navbar */
+    padding: 0.5em 2em; /* Adjust padding as needed */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+/* Logo Styles */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    /* Adjust logo size and padding as needed */
+}
+
+.navbar .logo img {
+    height: 50px; /* Adjust based on your logo size */
+    width: auto; /* Maintain aspect ratio */
+    /* Optional: Add a border or box shadow */
+    border-radius: 5px; /* Rounded corners if desired */
+    transition: transform 0.3s;
+}
+
+.navbar .logo img:hover {
+    transform: scale(1.1); /* Slightly zoom on hover */
+}
+
+/* Navigation Links Styles */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2em; /* Space between nav links */
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: #1E90FF; /* Bright blue color for links */
+    text-decoration: none;
+    font-size: 1em; /* Adjust font size */
+    padding: 0.5em 0;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #ffffff; /* White color on hover */
+    border-bottom: 2px solid #1E90FF; /* Underline effect */
+}
+
+/* Responsive Design for Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5em 1em; /* Adjust padding for smaller screens */
+    }
+    
+    .nav-links {
+        display: none; /* Hide links by default on small screens */
+    }
 }
