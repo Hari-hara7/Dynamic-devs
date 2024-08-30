@@ -121,3 +121,6 @@ function openMeeting() {
 function openMeetings() {
     window.open('https://roboticsclub.daily.co/8id78buYAm8PLyRMMJc0', '_blank');
 }
+function openMeetingss() {
+    window.open('https://aeroclubnmamit.daily.co/hvJyS2HlCA6KDuGQNObX', '_blank');
+}
