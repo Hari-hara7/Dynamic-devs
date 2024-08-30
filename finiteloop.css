@@ -31,7 +31,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 1em 0em;
-    background-color: #111; /* Darker background */
+    background-color: #000000; /* Darker background */
     position: fixed;
     width: 100%;
     top: 0;
@@ -647,7 +647,7 @@ form textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #111; /* Dark background for the navbar */
+    background-color: #000000; /* Dark background for the navbar */
     padding: 0.5em 0em; /* Adjust padding as needed */
     position: fixed;
     width: 100%;
@@ -710,4 +710,23 @@ form textarea {
     .nav-links {
         display: none; /* Hide links by default on small screens */
     }
+}
+
+
+/* Header styling */
+h2 {
+    font-size: 2em; /* Adjust the font size as needed */
+    font-weight: bold;
+    text-align: center; /* Center align the text */
+    margin: 1em 0; /* Adjust margin as needed */
+}
+
+/* White color for 'Virtual' */
+.white-text {
+    color: #ffffff; /* White color */
+}
+
+/* Blue color for 'Meetings' */
+.blue-text {
+    color: #1E90FF; /* Bright blue color */
 }

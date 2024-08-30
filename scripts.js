@@ -87,9 +87,21 @@ form.addEventListener("submit", function(event) {
         if (response.ok) {
             form.reset();
             confirmationMessage.classList.remove("hidden");
+
+            // Show success pop-up
+            const successPopup = document.getElementById("successPopup");
+            successPopup.classList.remove("hidden");
+
+            // Hide modal after 2 seconds
             setTimeout(() => {
                 modal.style.display = "none";
+
+                // Hide success pop-up after an additional 2 seconds
+                setTimeout(() => {
+                    successPopup.classList.add("hidden");
+                }, 2000);
             }, 2000); // Close modal after 2 seconds
+
         } else {
             alert("Something went wrong. Please try again.");
         }
