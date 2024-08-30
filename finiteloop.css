@@ -648,7 +648,7 @@ form textarea {
     justify-content: space-between;
     align-items: center;
     background-color: #111; /* Dark background for the navbar */
-    padding: 0.5em 2em; /* Adjust padding as needed */
+    padding: 0.5em 0em; /* Adjust padding as needed */
     position: fixed;
     width: 100%;
     top: 0;
