@@ -184,25 +184,64 @@
         </div>
     </section>
 
-    <!-- Registration Modal -->
-    <div id="registration-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Register for the Event</h2>
-            <form id="registration-form" action="https://formspree.io/f/mwpeyzgp" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="usn">USN:</label>
-                <input type="text" id="usn" name="usn" required>
-                <label for="email">College Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="problem">Problem/Query:</label>
-                <textarea id="problem" name="problem" required></textarea>
-                <button type="submit" class="submit-button">Submit</button>
-                <p id="confirmation-message" class="hidden">Your form has been submitted successfully. Ready for the workshop!</p>
-            </form>
-        </div>
+   <!-- Registration Modal -->
+<div id="registration-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Register for the Club Event</h2>
+        <form id="registration-form" action="https://formspree.io/f/mwpeyzgp" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="usn">USN:</label>
+            <input type="text" id="usn" name="usn" required>
+
+            <label for="email">College Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Contact Number:</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Enter 10-digit number">
+
+            <label for="club">Club Name:</label>
+            <select id="club" name="club" required>
+                <option value="">Select Club</option>
+                <option value="Finite Loop Club">Finite Loop Club</option>
+                <option value="Robotics Club">Robotics Club</option>
+                <option value="Aero Club">Aero Club</option>
+                <option value="HackerEarth Club">HackerEarth Club</option>
+                <option value="CSI Club">CSI Club</option>
+                <option value="Kalanjali Club">Kalanjali Club</option>
+            </select>
+
+            <label for="semester">Semester:</label>
+            <select id="semester" name="semester" required>
+                <option value="">Select Semester</option>
+                <option value="1st">1st Semester</option>
+                <option value="2nd">2nd Semester</option>
+                <option value="3rd">3rd Semester</option>
+                <option value="4th">4th Semester</option>
+                <option value="5th">5th Semester</option>
+                <option value="6th">6th Semester</option>
+                <option value="7th">7th Semester</option>
+                <option value="8th">8th Semester</option>
+            </select>
+
+            <label for="session">Preferred Workshop Session:</label>
+            <select id="session" name="session" required>
+                <option value="">Select Session</option>
+                <option value="Morning">Morning Session</option>
+                <option value="Afternoon">Afternoon Session</option>
+                <option value="Evening">Evening Session</option>
+            </select>
+
+            <label for="problem">Problem/Query:</label>
+            <textarea id="problem" name="problem" rows="4" required></textarea>
+
+            <button type="submit" class="submit-button">Submit</button>
+            <p id="confirmation-message" class="hidden">Your registration has been submitted successfully. Welcome to the workshop!</p>
+        </form>
     </div>
+</div>
 
 
     <!-- Polls Section -->
@@ -211,7 +250,7 @@
         <p>We'd love to know if you plan to attend our upcoming events!</p>
         <div class="poll-embed">
             <!-- Embed poll using a third-party service API or custom script -->
-            <iframe src="https://polling-service.com/embed/poll/12345"></iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeHH57bMRBA-Xvf5Bbk_pqLv4ry4ogMr_E99wzxynTJ-7_3Ww/viewform?usp=sf_link"></iframe>
         </div>
     </section>
 
@@ -292,7 +331,23 @@
             <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
-
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/667b86be9d7f358570d36224/1i198cmoo';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
+        <!--End of Tawk.to Script-->
+       <script src="script.js"></script>
+    
+       
+      
     <script src="scripts.js"></script>
+    
 </body>
 </html>
