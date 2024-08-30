@@ -93,7 +93,7 @@
             </div>
             <!-- Event 5 -->
             <div class="event-card">
-                <img src="robotics5.jpg" alt="Advanced Robotics">
+                <img src="robotics1.jpg" alt="Advanced Robotics">
                 <h3>Advanced Robotics Workshop</h3>
                 <p>Date: Dec 20, 2024</p>
                 <p><i class="fas fa-clock"></i> Time: 1:00 PM - 4:00 PM</p>
@@ -106,82 +106,107 @@
     </section>
 
     <!-- Registration Section -->
-    <section id="registration" class="club-registration-section">
-        <h2>Event Registration</h2>
-        <div class="registration-cards">
-            <!-- Registration Card 1 -->
-            <div class="registration-card">
-                <img src="robotics1.jpg" alt="Robotics 101 Workshop">
-                <h3>Robotics 101 Workshop</h3>
-                <p>Get started with robotics in this hands-on workshop.</p>
-                <button class="register-button">Register Now</button>
-            </div>
-            <!-- Registration Card 2 -->
-            <div class="registration-card">
-                <img src="robotics2.jpg" alt="AI in Robotics">
-                <h3>AI in Robotics Seminar</h3>
-                <p>Explore the intersection of AI and robotics.</p>
-                <button class="register-button">Register Now</button>
-            </div>
-            <!-- Registration Card 3 -->
-            <div class="registration-card">
-                <img src="robotics3.jpg" alt="Autonomous Vehicles Workshop">
-                <h3>Autonomous Vehicles Workshop</h3>
-                <p>Learn about the technology behind self-driving cars.</p>
-                <button class="register-button">Register Now</button>
-            </div>
-            <!-- Registration Card 4 -->
-            <div class="registration-card">
-                <img src="robotics4.jpg" alt="Robotics in Medicine">
-                <h3>Robotics in Medicine</h3>
-                <p>Discover how robotics is revolutionizing healthcare.</p>
-                <button class="register-button">Register Now</button>
-            </div>
-            <!-- Registration Card 5 -->
-            <div class="registration-card">
-                <img src="robotics5.jpg" alt="Advanced Robotics Workshop">
-                <h3>Advanced Robotics Workshop</h3>
-                <p>Dive deep into advanced robotics technologies.</p>
-                <button class="register-button">Register Now</button>
-            </div>
+    <!-- Registration Section -->
+<section id="registration" class="club-registration-section">
+    <h2>Robotics Club Event Registration</h2>
+    <div class="registration-cards">
+        <!-- Registration Card 1 -->
+        <div class="registration-card">
+            <img src="robotics2.webp" alt="Intro to Robotics">
+            <h3>Intro to Robotics</h3>
+            <p>Kickstart your journey in robotics with this introductory workshop.</p>
+            <button class="register-button">Register Now</button>
         </div>
-    </section>
-
-    <!-- Registration Modal -->
-    <div id="registration-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Register for the Club Event</h2>
-            <form id="registration-form" action="https://formspree.io/f/mwpeyzgp" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="usn">USN:</label>
-                <input type="text" id="usn" name="usn" required>
-
-                <label for="email">College Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="phone">Contact Number:</label>
-                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Enter 10-digit number">
-
-                <label for="club">Club Name:</label>
-                <select id="club" name="club" required>
-                    <option value="">Select Club</option>
-                    <option value="Finite Loop Club">Finite Loop Club</option>
-                    <option value="Robotics Club">Robotics Club</option>
-                    <option value="NullPointer_Club">NullPointer Club</option>
-                    <option value="Design Club">Design Club</option>
-                    <option value="App/Web Development Club">App/Web Development Club</option>
-                </select>
-
-                <label for="event">Event Name:</label>
-                <input type="text" id="event" name="event" required>
-
-                <button type="submit" class="submit-btn">Register</button>
-            </form>
+        <!-- Registration Card 2 -->
+        <div class="registration-card">
+            <img src="robotics2.webp" alt="Autonomous Drones">
+            <h3>Autonomous Drones Workshop</h3>
+            <p>Learn to build and program autonomous drones in this hands-on workshop.</p>
+            <button class="register-button">Register Now</button>
+        </div>
+        <!-- Registration Card 3 -->
+        <div class="registration-card">
+            <img src="robotics2.webp" alt="AI in Robotics">
+            <h3>AI in Robotics</h3>
+            <p>Explore the integration of AI in robotics and its applications.</p>
+            <button class="register-button">Register Now</button>
+        </div>
+        <!-- Registration Card 4 -->
+        <div class="registration-card">
+            <img src="robotics2.webp" alt="Robotics Competition Prep">
+            <h3>Robotics Competition Prep</h3>
+            <p>Prepare for upcoming robotics competitions with expert guidance.</p>
+            <button class="register-button">Register Now</button>
+        </div>
+        <!-- Registration Card 5 -->
+        <div class="registration-card">
+            <img src="robotics2.webp" alt="Robot Control Systems">
+            <h3>Robot Control Systems</h3>
+            <p>Dive deep into the control systems that power modern robots.</p>
+            <button class="register-button">Register Now</button>
         </div>
     </div>
+</section>
+
+<!-- Registration Modal -->
+<div id="registration-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Register for Robotics Club Event</h2>
+        <form id="registration-form" action="https://formspree.io/f/mwpeyzgp" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="usn">USN:</label>
+            <input type="text" id="usn" name="usn" required>
+
+            <label for="email">College Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Contact Number:</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Enter 10-digit number">
+
+            <label for="club">Club Name:</label>
+            <select id="club" name="club" required>
+                <option value="">Select Club</option>
+                <option value="Robotics Club">Robotics Club</option>
+                <option value="Finite Loop Club">Finite Loop Club</option>
+                <option value="Aero Club">Aero Club</option>
+                <option value="HackerEarth Club">HackerEarth Club</option>
+                <option value="CSI Club">CSI Club</option>
+                <option value="Kalanjali Club">Kalanjali Club</option>
+            </select>
+
+            <label for="semester">Semester:</label>
+            <select id="semester" name="semester" required>
+                <option value="">Select Semester</option>
+                <option value="1st">1st Semester</option>
+                <option value="2nd">2nd Semester</option>
+                <option value="3rd">3rd Semester</option>
+                <option value="4th">4th Semester</option>
+                <option value="5th">5th Semester</option>
+                <option value="6th">6th Semester</option>
+                <option value="7th">7th Semester</option>
+                <option value="8th">8th Semester</option>
+            </select>
+
+            <label for="session">Preferred Workshop Session:</label>
+            <select id="session" name="session" required>
+                <option value="">Select Session</option>
+                <option value="Morning">Morning Session</option>
+                <option value="Afternoon">Afternoon Session</option>
+                <option value="Evening">Evening Session</option>
+            </select>
+
+            <label for="problem">Problem/Query:</label>
+            <textarea id="problem" name="problem" rows="4" required></textarea>
+
+            <button type="submit" class="submit-button">Submit</button>
+            <p id="confirmation-message" class="hidden">Your registration has been submitted successfully. Welcome to the workshop!</p>
+        </form>
+    </div>
+</div>
+
 
     <!-- Footer -->
     <footer class="club-footer">
@@ -189,7 +214,19 @@
             <p>&copy; 2024 Robotics Club. All rights reserved.</p>
         </div>
     </footer>
-
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/667b86be9d7f358570d36224/1i198cmoo';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
+        <!--End of Tawk.to Script-->
+       <script src="scripts.js"></script>
     <!-- Scripts -->
     <script>
         function scrollToSection(sectionId) {
