@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalanjali Club | Dynamic Devs</title>
+    <link rel="stylesheet" href="finiteloop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="dynamic devs (2).jpg" alt="Dynamic Devs Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#clubs">Clubs</a></li>
+            <li><a href="index.html#events">Events</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="club-hero-section">
+        <div class="club-hero-content">
+            <h1>Kalanjali Club</h1>
+            <p class="tagline">Celebrating Arts and Culture</p>
+            <button class="cta-button" onclick="scrollToSection('about')">
+                <i class="fas fa-info-circle"></i> Learn More
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="club-about-section">
+        <div class="container">
+            <h2>About Kalanjali Club</h2>
+            <p>Kalanjali Club is a vibrant community dedicated to celebrating and promoting the arts and cultural heritage. Our members engage in various artistic activities, including dance, music, drama, and visual arts. We provide a platform for students to showcase their talents, collaborate on creative projects, and explore diverse artistic expressions.</p>
+            <p>Whether you are passionate about performing arts or visual creativity, Kalanjali Club is the place where you can nurture your artistic skills and connect with like-minded individuals.</p>
+        </div>
+    </section>
+
+    <!-- Virtual Meetings Section -->
+    <section id="virtual-meetings" class="club-events-section">
+        <h2><span class="white-text">Virtual</span> <span class="blue-text">Meetings</span></h2>
+
+        <div class="virtual-meetings-cards">
+            <!-- Event 1 -->
+            <div class="event-card">
+                <img src="kala1.jpeg" alt="Dance Workshop">
+                <h3>Dance Workshop</h3>
+                <p>Date: Sept 20, 2024</p>
+                <p><i class="fas fa-clock"></i> Time: 2:00 PM - 4:00 PM</p>
+                <p><i class="fas fa-user-tie"></i> Instructor: Priya Sharma</p>
+                <button class="join-now-button" onclick="openMeetings()"> 
+                    <i class="fas fa-calendar-check"></i> Join Now
+                </button>
+            </div>
+            <!-- Event 2 -->
+            <div class="event-card">
+                <img src="kalaj2.jpg" alt="Art Exhibition">
+                <h3>Art Exhibition</h3>
+                <p>Date: Oct 15, 2024</p>
+                <p><i class="fas fa-clock"></i> Time: 11:00 AM - 1:00 PM</p>
+                <p><i class="fas fa-paint-brush"></i> Organizer: Anil Kumar</p>
+                <button class="join-now-button" onclick="openMeetings()"> 
+                    <i class="fas fa-calendar-check"></i> Join Now
+                </button>
+            </div>
+            <!-- Event 3 -->
+            <div class="event-card">
+                <img src="kalaj2.jpg" alt="Theater Performance">
+                <h3>Theater Performance</h3>
+                <p>Date: Nov 10, 2024</p>
+                <p><i class="fas fa-clock"></i> Time: 5:00 PM - 7:00 PM</p>
+                <p><i class="fas fa-theater-masks"></i> Director: Meera Reddy</p>
+                <button class="join-now-button" onclick="openMeetings()"> 
+                    <i class="fas fa-calendar-check"></i> Join Now
+                </button>
+            </div>
+            <!-- Event 4 -->
+            <div class="event-card">
+                <img src="kalaj2.jpg" alt="Music Jam Session">
+                <h3>Music Jam Session</h3>
+                <p>Date: Dec 5, 2024</p>
+                <p><i class="fas fa-clock"></i> Time: 6:00 PM - 8:00 PM</p>
+                <p><i class="fas fa-music"></i> Host: Rajeev Mehta</p>
+                <button class="join-now-button" onclick="openMeetings()"> 
+                    <i class="fas fa-calendar-check"></i> Join Now
+                </button>
+            </div>
+            <!-- Event 5 -->
+            <div class="event-card">
+                <img src="kalaj2.jpg" alt="Creative Writing Workshop">
+                <h3>Creative Writing Workshop</h3>
+                <p>Date: Dec 20, 2024</p>
+                <p><i class="fas fa-clock"></i> Time: 3:00 PM - 5:00 PM</p>
+                <p><i class="fas fa-pen"></i> Instructor: Aarti Patel</p>
+                <button class="join-now-button" onclick="openMeetings()"> 
+                    <i class="fas fa-calendar-check"></i> Join Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration" class="club-registration-section">
+        <h2>Kalanjali Club Event Registration</h2>
+        <div class="registration-cards">
+            <!-- Registration Card 1 -->
+            <div class="registration-card">
+                <img src="kala1.jpeg" alt="Dance Workshop">
+                <h3>Dance Workshop</h3>
+                <p>Join our dance workshop to explore various dance forms and techniques.</p>
+                <button class="register-button">Register Now</button>
+            </div>
+            <!-- Registration Card 2 -->
+            <div class="registration-card">
+                <img src="kala1.jpeg" alt="Art Exhibition">
+                <h3>Art Exhibition</h3>
+                <p>Showcase your art or visit the exhibition to see creative works.</p>
+                <button class="register-button">Register Now</button>
+            </div>
+            <!-- Registration Card 3 -->
+            <div class="registration-card">
+                <img src="kala1.jpeg" alt="Theater Performance">
+                <h3>Theater Performance</h3>
+                <p>Participate or watch engaging theater performances by our members.</p>
+                <button class="register-button">Register Now</button>
+            </div>
+            <!-- Registration Card 4 -->
+            <div class="registration-card">
+                <img src="kala1.jpeg" alt="Music Jam Session">
+                <h3>Music Jam Session</h3>
+                <p>Collaborate with others in our music jam sessions and enjoy live music.</p>
+                <button class="register-button">Register Now</button>
+            </div>
+            <!-- Registration Card 5 -->
+            <div class="registration-card">
+                <img src="kala1.jpeg" alt="Creative Writing Workshop">
+                <h3>Creative Writing Workshop</h3>
+                <p>Enhance your writing skills and share your creative work.</p>
+                <button class="register-button">Register Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Modal -->
+    <div id="registration-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Register for Kalanjali Club Event</h2>
+            <form id="registration-form" action="https://formspree.io/f/mwpeyzgp" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="usn">USN:</label>
+                <input type="text" id="usn" name="usn" required>
+
+                <label for="email">College Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Contact Number:</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Enter 10-digit number">
+
+                <label for="club">Club Name:</label>
+                <select id="club" name="club" required>
+                    <option value="">Select Club</option>
+                    <option value="Kalanjali
+                    <option value="Kalanjali Club">Kalanjali Club</option>
+                    <option value="Finite Loop Club">Finite Loop Club</option>
+                    <option value="Aero Club">Aero Club</option>
+                    <option value="HackerEarth Club">HackerEarth Club</option>
+                    <option value="CSI Club">CSI Club</option>
+                    <option value="Robotics Club">Robotics Club</option>
+                </select>
+    
+                <label for="semester">Semester:</label>
+                <select id="semester" name="semester" required>
+                    <option value="">Select Semester</option>
+                    <option value="1st">1st Semester</option>
+                    <option value="2nd">2nd Semester</option>
+                    <option value="3rd">3rd Semester</option>
+                    <option value="4th">4th Semester</option>
+                    <option value="5th">5th Semester</option>
+                    <option value="6th">6th Semester</option>
+                    <option value="7th">7th Semester</option>
+                    <option value="8th">8th Semester</option>
+                </select>
+    
+                <label for="session">Preferred Workshop Session:</label>
+                <select id="session" name="session" required>
+                    <option value="">Select Session</option>
+                    <option value="Morning">Morning Session</option>
+                    <option value="Afternoon">Afternoon Session</option>
+                    <option value="Evening">Evening Session</option>
+                </select>
+    
+                <label for="problem">Problem/Query:</label>
+                <textarea id="problem" name="problem" rows="4" required></textarea>
+    
+                <button type="submit" class="submit-button">Submit</button>
+                <p id="confirmation-message" class="hidden">Your registration has been submitted successfully. Welcome to the event!</p>
+            </form>
+        </div>
+    </div>
+    
+      <!-- Polls Section -->
+      <section id="polls" class="club-polls-section">
+        <h2>Event Attendance Polls</h2>
+        <p>We'd love to know if you plan to attend our upcoming events!</p>
+        <div class="poll-embed">
+            <!-- Embed poll using a third-party service API or custom script -->
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeHH57bMRBA-Xvf5Bbk_pqLv4ry4ogMr_E99wzxynTJ-7_3Ww/viewform?usp=sf_link"></iframe>
+        </div>
+    </section>
+    
+    <script type="text/javascript" src="https://form.jotform.com/jsform/242425404201037"></script>
+    
+    <!-- Q&A Section -->
+    <section id="qa" class="club-qa-section">
+        <h2>Ask a Question</h2>
+        <form action="https://formspree.io/f/mwpeyzgp" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="usn">USN:</label>
+                <input type="text" id="usn" name="usn" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="problem">Your Question/Issue:</label>
+                <textarea id="problem" name="problem" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </section>
+    
+        <!-- Footer -->
+        <footer class="club-footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Kalanjali Club. All rights reserved.</p>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/667b86be9d7f358570d36224/1i198cmoo';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+            })();
+            </script>
+            <!--End of Tawk.to Script-->
+           <script src="scripts.js"></script>
+        <!-- Scripts -->
+        <script>
+            function scrollToSection(sectionId) {
+                const section = document.getElementById(sectionId);
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+    
+            // Modal
+            var modal = document.getElementById("registration-modal");
+            var closeModal = document.getElementsByClassName("close")[0];
+            closeModal.onclick = function () {
+                modal.style.display = "none";
+            };
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            };
+    
+            document.querySelectorAll(".register-button").forEach(button => {
+                button.addEventListener("click", function() {
+                    modal.style.display = "block";
+                });
+            });
+        </script>
+    </body>
+    </html>
+    
