@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finite Loop Club | Dynamic Devs</title>
+    <link rel="stylesheet" href="finiteloop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="" alt="Dynamic Devs Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#clubs">Clubs</a></li>
+            <li><a href="index.html#events">Events</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+
+    <!-- Hero Section -->
+    <section id="hero" class="club-hero-section">
+        <div class="club-hero-content">
+            <h1>Finite Loop Club</h1>
+            <p class="tagline">Innovating with Code</p>
+            <button class="cta-button" onclick="scrollToSection('about')">
+                <i class="fas fa-info-circle"></i> Learn More
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="club-about-section">
+        <div class="container">
+            <h2>About Finite Loop Club</h2>
+            <p>The Finite Loop Club is dedicated to fostering a community of passionate coders and developers. Our club hosts coding workshops, hackathons, and provides opportunities for members to collaborate on innovative projects.</p>
+            <p>Whether you're a beginner looking to learn the basics or an experienced coder wanting to take on new challenges, the Finite Loop Club is the perfect place to hone your skills and connect with like-minded individuals.</p>
+        </div>
+    </section>
+
+    <!-- Virtual Meetings Section -->
+    <section id="virtual-meetings" class="club-events-section">
+        <h2>Virtual Meetings</h2>
+        <div class="virtual-meetings-cards">
+            <!-- Event 1 -->
+            <div class="event-card">
+                <img src="finite1.webp" alt="JavaScript Masterclass">
+                <h3>JavaScript Masterclass</h3>
+                <p>Date: Sept 12, 2024</p>
+                <p><i class="fas fa-clock"></i> Time: 10:00 AM - 12:00 PM</p>
+                <p><i class="fas fa-user-tie"></i> Instructor: Jane Doe</p>
+                <button class="join-now-button">
+                    <i class="fas fa-calendar-check"></i> Join Now
+                </button>
+            </div>
+            <!-- Event 2 -->
+            <div class="event-card">
+                <img src="finite2.webp" alt="Code Sprint">
+                <h3>Hackathon: Code Sprint</h3>
+                <p>Date: Oct 5, 2024</p>
+                <p><i class="fas fa-clock"></i> Time: 9:00 AM - 6:00 PM</p>
+                <p><i class="fas fa-shield-alt"></i> Instructor: John Smith</p>
+                <button class="join-now-button">
+                    <i class="fas fa-calendar-check"></i> Join Now
+                </button>
+            </div>
+            <!-- Event 3 -->
+            <div class="event-card">
+                <img src="finite3.webp" alt="AI Ethics Seminar">
+                <h3>AI Ethics Seminar</h3>
+                <p>Date: Oct 20, 2024</p>
+                <p><i class="fas fa-clock"></i> Time: 1:00 PM - 3:00 PM</p>
+                <p><i class="fas fa-microphone"></i> Speaker: Dr. Alan Turing</p>
+                <button class="join-now-button">
+                    <i class="fas fa-calendar-check"></i> Join Now
+                </button>
+            </div>
+            <!-- Event 4 -->
+            <div class="event-card">
+                <img src="finite4.webp" alt="DevOps Essentials">
+                <h3>DevOps Essentials Workshop</h3>
+                <p>Date: Nov 2, 2024</p>
+                <p><i class="fas fa-clock"></i> Time: 11:00 AM - 2:00 PM</p>
+                <p><i class="fas fa-user-cog"></i> Instructor: DevOps Guru</p>
+                <button class="join-now-button">
+                    <i class="fas fa-calendar-check"></i> Join Now
+                </button>
+            </div>
+            <!-- Event 5 -->
+            <div class="event-card">
+                <img src="finite5.webp" alt="Cybersecurity Bootcamp">
+                <h3>Cybersecurity Bootcamp</h3>
+                <p>Date: Nov 18, 2024</p>
+                <p><i class="fas fa-clock"></i> Time: 9:00 AM - 4:00 PM</p>
+                <p><i class="fas fa-shield-alt"></i> Instructor: John Smith</p>
+                <button class="join-now-button">
+                    <i class="fas fa-calendar-check"></i> Join Now
+                </button>
+            </div>
+            <!-- Event 6 -->
+            <div class="event-card">
+                <img src="images/cloud-computing-poster.jpg" alt="Cloud Computing Fundamentals">
+                <h3>Cloud Computing Fundamentals</h3>
+                <p>Date: Dec 5, 2024</p>
+                <p><i class="fas fa-clock"></i> Time: 10:00 AM - 1:00 PM</p>
+                <p><i class="fas fa-cloud"></i> Speaker: Cloud Expert</p>
+                <button class="join-now-button">
+                    <i class="fas fa-calendar-check"></i> Join Now
+                </button>
+            </div>
+            <!-- Event 7 -->
+            <div class="event-card">
+                <img src="images/blockchain-poster.jpg" alt="Blockchain Basics">
+                <h3>Blockchain Basics Workshop</h3>
+                <p>Date: Dec 12, 2024</p>
+                <p><i class="fas fa-clock"></i> Time: 2:00 PM - 4:00 PM</p>
+                <p><i class="fas fa-link"></i> Instructor: Blockchain Enthusiast</p>
+                <button class="join-now-button">
+                    <i class="fas fa-calendar-check"></i> Join Now
+                </button>
+            </div>
+            <!-- Event 8 -->
+            <div class="event-card">
+                <img src="images/data-science-poster.jpg" alt="Data Science Workshop">
+                <h3>Data Science Workshop</h3>
+                <p>Date: Dec 20, 2024</p>
+                <p><i class="fas fa-clock"></i> Time: 11:00 AM - 1:00 PM</p>
+                <p><i class="fas fa-database"></i> Instructor: Data Scientist Pro</p>
+                <button class="join-now-button">
+                    <i class="fas fa-calendar-check"></i> Join Now
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <!-- Registration Section -->
+    <section id="registration" class="club-registration-section">
+        <h2>Event Registration</h2>
+        <div class="registration-cards">
+            <!-- Registration Card 1 -->
+            <div class="registration-card">
+                <img src="images/workshop1.jpg" alt="Python Workshop">
+                <h3>Python Workshop</h3>
+                <p>Learn Python basics in this hands-on workshop.</p>
+                <button class="register-button">Register Now</button>
+            </div>
+            <!-- Registration Card 2 -->
+            <div class="registration-card">
+                <img src="images/webinar1.jpg" alt="Web Development Webinar">
+                <h3>Web Development Webinar</h3>
+                <p>Join us for a webinar on modern web development techniques.</p>
+                <button class="register-button">Register Now</button>
+            </div>
+            <!-- Registration Card 3 -->
+            <div class="registration-card">
+                <img src="images/workshop2.jpg" alt="AI Workshop">
+                <h3>AI Workshop</h3>
+                <p>Explore AI technologies and applications in this comprehensive workshop.</p>
+                <button class="register-button">Register Now</button>
+            </div>
+            <!-- Registration Card 4 -->
+            <div class="registration-card">
+                <img src="images/seminar1.jpg" alt="Tech Seminar">
+                <h3>Tech Seminar</h3>
+                <p>Attend a seminar on the latest trends in technology.</p>
+                <button class="register-button">Register Now</button>
+            </div>
+            <!-- Registration Card 5 -->
+            <div class="registration-card">
+                <img src="images/workshop3.jpg" alt="Data Science Workshop">
+                <h3>Data Science Workshop</h3>
+                <p>Learn about data science and its practical applications.</p>
+                <button class="register-button">Register Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Modal -->
+    <div id="registration-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Register for the Event</h2>
+            <form id="registration-form" action="https://formspree.io/f/{form_id}" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="usn">USN:</label>
+                <input type="text" id="usn" name="usn" required>
+                <label for="email">College Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="problem">Problem/Query:</label>
+                <textarea id="problem" name="problem" required></textarea>
+                <button type="submit" class="submit-button">Submit</button>
+                <p id="confirmation-message" class="hidden">Your form has been submitted successfully. Ready for the workshop!</p>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Polls Section -->
+    <section id="polls" class="club-polls-section">
+        <h2>Event Attendance Polls</h2>
+        <p>We'd love to know if you plan to attend our upcoming events!</p>
+        <div class="poll-embed">
+            <!-- Embed poll using a third-party service API or custom script -->
+            <iframe src="https://polling-service.com/embed/poll/12345"></iframe>
+        </div>
+    </section>
+
+    <!-- Q&A Section -->
+    <section id="qa" class="club-qa-section">
+        <h2>Ask a Question</h2>
+        <form action="https://formspree.io/f/{form_id}" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="usn">USN:</label>
+                <input type="text" id="usn" name="usn" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="problem">Your Question/Issue:</label>
+                <textarea id="problem" name="problem" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="club-leadership-section">
+        <h2>Club Leadership</h2>
+        <div class="leadership-cards">
+            <div class="leader-card">
+                <img src="images/leader1.jpg" alt="Leader 1">
+                <h3>John Doe</h3>
+                <p>President</p>
+                <a href="mailto:johndoe@example.com" class="contact-button"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+            <div class="leader-card">
+                <img src="images/leader2.jpg" alt="Leader 2">
+                <h3>Jane Smith</h3>
+                <p>Vice President</p>
+                <a href="mailto:janesmith@example.com" class="contact-button"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+            <div class="leader-card">
+                <img src="images/leader3.jpg" alt="Leader 3">
+                <h3>Sam Lee</h3>
+                <p>Event Coordinator</p>
+                <a href="mailto:samlee@example.com" class="contact-button"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Events Section -->
+    <section id="past-events" class="club-past-events-section">
+        <h2>Past Events</h2>
+        <div class="past-events-gallery">
+            <div class="gallery-item">
+                <img src="images/event1.jpg" alt="Past Event 1">
+                <p>Hackathon 2023</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/event2.jpg" alt="Past Event 2">
+                <p>JavaScript Workshop 2023</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/event3.jpg" alt="Past Event 3">
+                <p>Python Bootcamp 2022</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="club-footer">
+        <p>&copy; 2024 Finite Loop Club | Dynamic Devs. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

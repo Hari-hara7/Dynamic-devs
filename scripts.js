@@ -39,3 +39,62 @@ document.addEventListener('DOMContentLoaded', function () {
         mobileMenu.classList.toggle('active');
     });
 });
+
+
+// Get modal element
+var modal = document.getElementById("registration-modal");
+
+// Get open modal buttons
+var registerButtons = document.querySelectorAll(".register-button");
+
+// Get close button
+var closeButton = document.querySelector(".close");
+
+// Get form and confirmation message
+var form = document.getElementById("registration-form");
+var confirmationMessage = document.getElementById("confirmation-message");
+
+// Open modal when "Register Now" button is clicked
+registerButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        modal.style.display = "block";
+    });
+});
+
+// Close modal when close button is clicked
+closeButton.addEventListener("click", function() {
+    modal.style.display = "none";
+});
+
+// Close modal when clicking outside of the modal
+window.onclick = function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};
+
+// Handle form submission
+form.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    var formData = new FormData(form);
+
+    fetch(form.action, {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (response.ok) {
+            form.reset();
+            confirmationMessage.classList.remove("hidden");
+            setTimeout(() => {
+                modal.style.display = "none";
+            }, 2000); // Close modal after 2 seconds
+        } else {
+            alert("Something went wrong. Please try again.");
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
