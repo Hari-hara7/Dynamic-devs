@@ -110,3 +110,9 @@ form.addEventListener("submit", function(event) {
         console.error('Error:', error);
     });
 });
+
+
+
+function openMeeting() {
+    window.open('https://finiteloop.daily.co/hello-daily', '_blank');
+}
