@@ -128,3 +128,14 @@ function openMeetingss() {
 function openMeetingsss() {
     window.open('https://hackerearthnmamit.daily.co/NDcgLykHVbBFXb7QYQYo', '_blank');
 }
+
+
+ // Function to show an alert message
+ function showAlert() {
+    alert("This information is provided as an example and may not be accurate. In the future, we hope to make this real and collaborate with all the clubs.");
+}
+
+// Show the alert on page load
+window.onload = function() {
+    showAlert();
+};
