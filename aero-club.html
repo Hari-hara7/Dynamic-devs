@@ -3,316 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aero Club | Dynamic Devs</title>
-    <link rel="stylesheet" href="finiteloop.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Restricted Information | Dynamic Devs</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Update path as needed -->
+    <style>
+        /* CSS for the pop-up modal */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .modal {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+        }
+        .modal-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .modal-content h2 {
+            margin: 0 0 20px;
+        }
+        .modal-content p {
+            margin: 0 0 20px;
+        }
+        .close {
+            cursor: pointer;
+            font-size: 24px;
+            color: #000;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="dynamic devs (2).jpg" alt="Dynamic Devs Logo">
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html#hero">Home</a></li>
-            <li><a href="index.html#clubs">Clubs</a></li>
-            <li><a href="index.html#events">Events</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="hero" class="club-hero-section">
-        <div class="club-hero-content">
-            <h1>Aero Club</h1>
-            <p class="tagline">Soaring to New Heights with Aeronautical Innovation</p>
-            <button class="cta-button" onclick="scrollToSection('about')">
-                <i class="fas fa-info-circle"></i> Learn More
-            </button>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="club-about-section">
-        <div class="container">
-            <h2>About Aero Club</h2>
-            <p>The Aero Club is dedicated to exploring the world of aeronautics and aviation. We provide a platform for students to learn about aircraft design, flight mechanics, and the latest developments in the aerospace industry.</p>
-            <p>Whether you are passionate about flying, engineering, or just curious about aeronautics, the Aero Club offers opportunities to dive deep into the field and turn your passion into practical skills.</p>
-        </div>
-    </section>
-
-    <!-- Virtual Meetings Section -->
-    <section id="virtual-meetings" class="club-events-section">
-        <h2><span class="white-text">Virtual</span> <span class="blue-text">Meetings</span></h2>
-
-        <div class="virtual-meetings-cards">
-            <!-- Event 1 -->
-            <div class="event-card">
-                <img src="aero1.webp" alt="Basics of Aerodynamics">
-                <h3>Basics of Aerodynamics</h3>
-                <p>Date: Sept 20, 2024</p>
-                <p><i class="fas fa-clock"></i> Time: 10:00 AM - 12:00 PM</p>
-                <p><i class="fas fa-wind"></i> Instructor: John Doe</p>
-                <button class="join-now-button" onclick="openMeetingss()"> 
-                    <i class="fas fa-calendar-check"></i> Join Now
-                </button>
-            </div>
-            <!-- Event 2 -->
-            <div class="event-card">
-                <img src="aero2.webp" alt="Aircraft Design Seminar">
-                <h3>Aircraft Design Seminar</h3>
-                <p>Date: Oct 18, 2024</p>
-                <p><i class="fas fa-clock"></i> Time: 1:00 PM - 3:00 PM</p>
-                <p><i class="fas fa-drafting-compass"></i> Speaker: Jane Smith</p>
-                <button class="join-now-button" onclick="openMeetingss()"> 
-                    <i class="fas fa-calendar-check"></i> Join Now
-                </button>
-            </div>
-            <!-- Event 3 -->
-            <div class="event-card">
-                <img src="aero3.webp" alt="Drone Technologies">
-                <h3>Drone Technologies Workshop</h3>
-                <p>Date: Nov 8, 2024</p>
-                <p><i class="fas fa-clock"></i> Time: 11:00 AM - 2:00 PM</p>
-                <p><i class="fas fa-helicopter"></i> Instructor: Michael Lee</p>
-                <button class="join-now-button" onclick="openMeetingss()"> 
-                    <i class="fas fa-calendar-check"></i> Join Now
-                </button>
-            </div>
-            <!-- Event 4 -->
-            <div class="event-card">
-                <img src="aero4.webp" alt="Aerospace Engineering">
-                <h3>Aerospace Engineering Seminar</h3>
-                <p>Date: Dec 3, 2024</p>
-                <p><i class="fas fa-clock"></i> Time: 9:00 AM - 12:00 PM</p>
-                <p><i class="fas fa-rocket"></i> Speaker: Dr. Emily Clark</p>
-                <button class="join-now-button" onclick="openMeetingss()"> 
-                    <i class="fas fa-calendar-check"></i> Join Now
-                </button>
-            </div>
-            <!-- Event 5 -->
-            <div class="event-card">
-                <img src="aero1.webp" alt="Advanced Flight Mechanics">
-                <h3>Advanced Flight Mechanics Workshop</h3>
-                <p>Date: Dec 22, 2024</p>
-                <p><i class="fas fa-clock"></i> Time: 1:00 PM - 4:00 PM</p>
-                <p><i class="fas fa-plane"></i> Instructor: Tech Enthusiast</p>
-                <button class="join-now-button" onclick="openMeetingss()"> 
-                    <i class="fas fa-calendar-check"></i> Join Now
-                </button>
-            </div>
-        </div>
-    </section>
-
-   <!-- Registration Section -->
-<section id="registration" class="club-registration-section">
-    <h2>Event Registration</h2>
-    <div class="registration-cards">
-        <!-- Registration Card 1 -->
-        <div class="registration-card">
-            <img src="aero1.webp" alt="Intro to Aerodynamics">
-            <h3>Intro to Aerodynamics</h3>
-            <p>Kickstart your journey in aeronautics with this introductory workshop.</p>
-            <button class="register-button">Register Now</button>
-        </div>
-        <!-- Registration Card 2 -->
-        <div class="registration-card">
-            <img src="aero1.webp" alt="Drone Programming Workshop">
-            <h3>Drone Programming Workshop</h3>
-            <p>Learn to program and control drones in this hands-on workshop.</p>
-            <button class="register-button">Register Now</button>
-        </div>
-        <!-- Registration Card 3 -->
-        <div class="registration-card">
-            <img src="aero1.webp" alt="Flight Mechanics">
-            <h3>Flight Mechanics Workshop</h3>
-            <p>Explore the principles of flight mechanics and their applications.</p>
-            <button class="register-button">Register Now</button>
-        </div>
-        <!-- Registration Card 4 -->
-        <div class="registration-card">
-            <img src="aero1.webp" alt="Aircraft Design">
-            <h3>Aircraft Design Workshop</h3>
-            <p>Design and simulate your own aircraft with expert guidance.</p>
-            <button class="register-button">Register Now</button>
-        </div>
-        <!-- Registration Card 5 -->
-        <div class="registration-card">
-            <img src="aero1.webp" alt="Advanced Aerospace Seminar">
-            <h3>Advanced Aerospace Seminar</h3>
-            <p>Dive into the latest developments in aerospace engineering.</p>
-            <button class="register-button">Register Now</button>
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Information Restricted</h2>
+            <p>We apologize, but the information on this page is restricted.</p>
         </div>
     </div>
-</section>
 
-<!-- Registration Modal -->
-<div id="registration-modal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Register for the Aero Club Event</h2>
-        <form id="registration-form" action="https://formspree.io/f/mwpeyzgp" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="usn">USN:</label>
-            <input type="text" id="usn" name="usn" required>
-
-            <label for="email">College Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="phone">Contact Number:</label>
-            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Enter 10-digit number">
-
-            <label for="club">Club Name:</label>
-            <select id="club" name="club" required>
-                <option value="">Select Club</option>
-                <option value="Aero Club">Aero Club</option>
-                <option value="Finite Loop Club">Finite Loop Club</option>
-                <option value="Robotics Club">Robotics Club</option>
-                <option value="HackerEarth Club">HackerEarth Club</option>
-                <option value="CSI Club">CSI Club</option>
-                <option value="Kalanjali Club">Kalanjali Club</option>
-            </select>
-
-            <label for="semester">Semester:</label>
-            <select id="semester" name="semester" required>
-                <option value="">Select Semester</option>
-                <option value="1st">1st Semester</option>
-                <option value="2nd">2nd Semester</option>
-                <option value="3rd">3rd Semester</option>
-                <option value="4th">4th Semester</option>
-                <option value="5th">5th Semester</option>
-                <option value="6th">6th Semester</option>
-                <option value="7th">7th Semester</option>
-                <option value="8th">8th Semester</option>
-            </select>
-
-            <label for="session">Preferred Workshop Session:</label>
-            <select id="session" name="session" required>
-                <option value="">Select Session</option>
-                <option value="Morning">Morning Session</option>
-                <option value="Afternoon">Afternoon Session</option>
-                <option value="Evening">Evening Session</option>
-            </select>
-
-            <label for="problem">Problem/Query:</label>
-            <textarea id="problem" name="problem" rows="4" required></textarea>
-
-            <button type="submit" class="submit-button">Submit</button>
-            <p id="confirmation-message" class="hidden">Your registration has been submitted successfully. Welcome to the workshop!</p>
-        </form>
-    </div>
-</div>
-
- <!-- Polls Section -->
- <section id="polls" class="club-polls-section">
-    <h2>Event Attendance Polls</h2>
-    <p>We'd love to know if you plan to attend our upcoming events!</p>
-    <div class="poll-embed">
-        <!-- Embed poll using a third-party service API or custom script -->
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeHH57bMRBA-Xvf5Bbk_pqLv4ry4ogMr_E99wzxynTJ-7_3Ww/viewform?usp=sf_link"></iframe>
-    </div>
-</section>
-
-<script type="text/javascript" src="https://form.jotform.com/jsform/242425404201037"></script>
-
-<!-- Q&A Section -->
-<section id="qa" class="club-qa-section">
-    <h2>Ask a Question</h2>
-    <form action="https://formspree.io/f/mwpeyzgp" method="POST">
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-            <label for="usn">USN:</label>
-            <input type="text" id="usn" name="usn" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="problem">Your Question/Issue:</label>
-            <textarea id="problem" name="problem" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="submit-button">Submit</button>
-    </form>
-</section>
-
-<!-- JavaScript -->
-<script>
-    var modal = document.getElementById('registration-modal');
-    var form = document.getElementById('registration-form');
-    var closeModal = document.getElementsByClassName('close')[0];
-
-    function openMeetings() {
-        modal.style.display = 'block';
-    }
-
-    closeModal.onclick = function() {
-        modal.style.display = 'none';
-    }
-
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = 'none';
-        }
-    }
-
-    form.onsubmit = function() {
-        alert('Your registration has been successfully submitted!');
-        return true;
-    };
-</script>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/667b86be9d7f358570d36224/1i198cmoo';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
-   <script src="script.js"></script>
-    <!--End of Tawk.to Script-->
-
-
-    <!--Start of Tawk.to Script-->
-
-
-    <!-- JavaScript -->
-    <script src="scripts.js"></script>
+    <!-- JavaScript for handling the modal -->
     <script>
-        // Registration Modal JavaScript
-        var modal = document.getElementById('registration-modal');
-        var form = document.getElementById('registration-form');
-        var closeModal = document.getElementsByClassName('close')[0];
-
-        function openMeetings() {
-            modal.style.display = 'block';
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
         }
 
-        closeModal.onclick = function() {
-            modal.style.display = 'none';
-        }
-
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = 'none';
-            }
-        }
-
-        form.onsubmit = function() {
-            alert('Your registration has been successfully submitted!');
-            return true;
-        };
+        // Automatically close the modal after a few seconds (optional)
+        setTimeout(function() {
+            closeModal();
+        }, 5000); // Adjust time as needed (5000 ms = 5 seconds)
     </script>
 </body>
 </html>
