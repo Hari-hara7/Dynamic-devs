@@ -1,6 +1,6 @@
 # Dynamic Devs
 <p align="center">
-  <img src="Screenshot 2024-11-03 004142.png" alt="Project Logo" width="300"/>
+  <img src="Screenshot 2024-11-03 004142.png" alt="Project Logo" />
 </p>
 **Dynamic Devs** is a vibrant web application designed to connect tech enthusiasts through clubs focused on coding, robotics, and aerospace. Join us to participate in virtual meetings, live chats, workshops, and more!
 
